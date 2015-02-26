@@ -25,35 +25,33 @@
 
     <ion-pane>
 	  <ion-content>
-	  <img class="full-image"  src="img/welcome.jpg">
-        
-		<button id = "NewStory" class="button button-block button-energized button-large col-offset-10">
-			New Story
-		</button>
-		
-		</br>
-        </br>
-		
-		<button id = "SavedStories" class="button button-block button-energized button-large col-offset-10">
-			Saved Stories
-		</button>
+	  <div class="bar bar-header bar-energized">
+			<h1 class="title">Insert a verb: </h1>
+	  </div>
+		<div class="list">
+			<div class="item item-input-inset">
+				<label class="item-input-wrapper">
+					<input type="text" placeholder="Verb"> 
+				</label>
+			<button id="next" class="button button-small">
+				Next
+			</button>
+		    </div>
+
+		</div>
 				
 	  
       </ion-content>
     </ion-pane>
 	
-	<!-- javascript -->
+	<!-- javascript 
+	next button
     <script>
-        document.getElementById("NewStory").onclick = function () {
+        document.getElementById("next").onclick = function () {
             location.href = "NewStoryList.html";
         };
-    </script>
+    </script> -->
 	
-	<script>
-        document.getElementById("SavedStories").onclick = function () {
-            location.href = "SavedStoryList.html";
-        };
-    </script>
 	
   </body>
 </html>

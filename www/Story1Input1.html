@@ -31,67 +31,67 @@
 	  <div class="list" scroll="true">
 	    <label class="item item-input">
 			<span class="input-label">Invisible first one (ignore)</span>
-			<input type="text">
+			<input type="text" >
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Class</span>
-			<input type="text">
+			<input type="text" ng-model="aclass">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Food</span>
-			<input type="text">
+			<input type="text" ng-model="food1">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Food</span>
-			<input type="text">
+			<input type="text" ng-model="food2">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Food</span>
-			<input type="text">
+			<input type="text" ng-model="food3">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Past tense Verb</span>
-			<input type="text">
+			<input type="text" ng-model="pasttenseverb">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Adjective</span>
-			<input type="text">
+			<input type="text" ng-model="adjective">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Adverb</span>
-			<input type="text">
+			<input type="text" ng-model="adverb">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Noun</span>
-			<input type="text">
+			<input type="text" ng-model="noun">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Mobile Device</span>
-			<input type="text">
+			<input type="text" ng-model="phone">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Name of popular dance/move</span>
-			<input type="text">
+			<input type="text" ng-model="dancemove">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Fraternity/Sorority</span>
-			<input type="text">
+			<input type="text" ng-model="greekorg">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Your Name</span>
-			<input type="text">
+			<input type="text" ng-model="name">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Place on Campus</span>
-			<input type="text">
+			<input type="text" ng-model="place">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Verb</span>
-			<input type="text">
+			<input type="text" ng-model="verb">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Emotion</span>
-			<input type="text">
+			<input type="text" ng-model="emotion">
 		</label>
 	</div>
 	<div class="bar">
@@ -109,7 +109,11 @@
             location.href = "index.html";
         };
     </script>
-	
+	<script>
+        document.getElementById("done").onclick = function () {
+            location.href = "Story1Output.html";
+        };
+    </script>
 	
 	
   </body>

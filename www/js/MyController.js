@@ -17,21 +17,21 @@ angular.module('starter', ['ionic'])
 
         function getNewWords() {
             return {
-                aclass: '___', 
-                food1: '___',
-                food2: '___', 
-                food3: '___',
-                pasttenseverb: '___',
-                adjective: '___',
-                adverb: '___',
-                noun: '___',
-                phone: '___',
-                dancemove: '___',
-                greekorg: '___',
-                username: '___',
-                place: '___',
-                verb: '___',
-                emotion: '___',
+                aclass: '', 
+                food1: '',
+                food2: '', 
+                food3: '',
+                pasttenseverb: '',
+                adjective: '',
+                adverb: '',
+                noun: '',
+                phone: '',
+                dancemove: '',
+                greekorg: '',
+                username: '',
+                place: '',
+                verb: '',
+                emotion: '',
             };
         }
 

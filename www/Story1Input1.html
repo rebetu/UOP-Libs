@@ -19,92 +19,119 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
-    <script src="js/app.js"></script>
-  </head>
-  <body ng-app="starter">
 
+
+  </head>
+  <body ng-app="starter" ng-controller="MyController">
+   <div ng-show="view == 'form'">
     <ion-pane>
 	  <ion-content>
 	  <div class="bar bar-header bar-energized">
 			<h1 class="title">Insert words for each of the types of words </h1>
 	  </div>
+	  <br/> <br/>
+
+	 
+	 <!-- form view -->
 	  <div class="list" scroll="true">
-	    <label class="item item-input">
-			<span class="input-label">Invisible first one (ignore)</span>
-			<input type="text" >
-		</label>
 		<label class="item item-input">
 			<span class="input-label">Class</span>
-			<input type="text" ng-model="aclass">
+			<input type="text" ng-model="data.aclass">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Food</span>
-			<input type="text" ng-model="food1">
+			<input type="text" ng-model="data.food1">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Food</span>
-			<input type="text" ng-model="food2">
+			<input type="text" ng-model="data.food2">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Food</span>
-			<input type="text" ng-model="food3">
+			<input type="text" ng-model="data.food3">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Past tense Verb</span>
-			<input type="text" ng-model="pasttenseverb">
+			<input type="text" ng-model="data.pasttenseverb">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Adjective</span>
-			<input type="text" ng-model="adjective">
+			<input type="text" ng-model="data.adjective">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Adverb</span>
-			<input type="text" ng-model="adverb">
+			<input type="text" ng-model="data.adverb">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Noun</span>
-			<input type="text" ng-model="noun">
+			<input type="text" ng-model="data.noun">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Mobile Device</span>
-			<input type="text" ng-model="phone">
+			<input type="text" ng-model="data.phone">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Name of popular dance/move</span>
-			<input type="text" ng-model="dancemove">
+			<input type="text" ng-model="data.dancemove">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Fraternity/Sorority</span>
-			<input type="text" ng-model="greekorg">
+			<input type="text" ng-model="data.greekorg">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Your Name</span>
-			<input type="text" ng-model="name">
+			<input type="text" ng-model="data.username">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Place on Campus</span>
-			<input type="text" ng-model="place">
+			<input type="text" ng-model="data.place">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Verb</span>
-			<input type="text" ng-model="verb">
+			<input type="text" ng-model="data.verb">
 		</label>
 		<label class="item item-input">
 			<span class="input-label">Emotion</span>
-			<input type="text" ng-model="emotion">
+			<input type="text" ng-model="data.emotion">
 		</label>
 	</div>
-	<div class="bar">
-                    <div class="button-bar">
-                        <a id="done" class="button button-energized" href="Best Day Ever.txt">Done</a>
-                    </div>
-                </div>
-            </div>
+		<div class="bar bar-footer">
+            <button class="button-bar button button-energized" ng-click="submit()">Done</button>
+        </div>
 
         </ion-content>
     </ion-pane>
+   </div>
 
-    <script>
+    
+    <!-- story view -->
+    <div ng-show == 'story'>
+     <ion-pane>
+	  <ion-content>
+	  <div class="bar bar-header bar-energized">
+			<h1 class="title">Your Story</h1>
+	  </div>
+	  <br/> <br/>
+	  <p>
+	  	Let me tell you the story of my best day here at the University. So, one day, in my first year here at UOP, I was heading over to the UC to get a breakfast burrito before {{data.aclass}} class. I love the breakfast burritos here, I usually get mine with {{data.food1}}, {{data.food2}}, and {{data.food3}}, so tasty. Anyway, after getting my breakfast burrito, I sat down and started munching away, thinking about what I would do for the rest of the day. It was then that I suddenly remembered there was a test scheduled for {{data.aclass}}, and I had completely forgotten to study for it. I {{data.pasttenseverb}}. I briefly considered just skipping the class and making up some {{data.adjective}} excuse, saying I was sick or something. So, I gobbled up the rest of my breakfast burrito and rushed to class, hoping to get in a few extra minutes of study time. I ran {{data.adverb}} towards my next class, almost pushing over a poor {{data.noun}} on my way there. However, when I arrived, the class was completely empty. I gazed upon the clock, and it was 10 minutes til’, so where was everyone? I checked my phone to confirm the time, it was accurate. So I waited in class for a short while, but no one came. I then checked my {{data.phone}} and saw an e-mail sent last night that said class was canceled, and that the test would be pushed back to next class. I started dancing the {{data.dancemove}}, I was so happy. The rest of my day was free, so I decided this would be as good a time as any to study {{data.aclass}} at the Library. After a few hours of studying, I felt really confident that I knew the material, so I packed up my things and headed out the door, but as I was leaving, one of the members of {{data.greekorg}} from my math class came up to me. “Hey, you’re {{data.username}}, right? Do you want to go to a party at {{data.place}} later today?” I had nothing better to do, so I agreed to their invitation. That party was one of the best parties I’ve ever been to, and I made some friends with people I probably would never have got the chance to {{data.verb}} otherwise. I still look back on that day, feeling {{data.emotion}}, it was day I will always remember.  
+	  	</p>
+	    
+	 <div class="bar">
+        <div class="button-bar bar-footer">
+
+            <a id="save" class="button button-energized">Save</a>
+        </div>
+    </div>
+   </ion-content>
+  </ion-pane> 
+</div>
+	<script>
+        document.getElementById("save").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+
+ <!--   <script>
         document.getElementById("back").onclick = function () {
             location.href = "index.html";
         };
@@ -113,8 +140,10 @@
         document.getElementById("done").onclick = function () {
             location.href = "Story1Output.html";
         };
-    </script>
-	
+    </script> -->
+	   <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/MyController.js"></script>
 	
   </body>
 </html>

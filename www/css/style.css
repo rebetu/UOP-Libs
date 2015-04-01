@@ -1,1 +1,13 @@
 /* Empty. Add your own CSS if you like */
+.highlight {
+    font-size: 1.3em;
+    display: inline;
+    padding: .2em .6em .3em;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    background-color: white;
+    color: #ff7f27;
+}

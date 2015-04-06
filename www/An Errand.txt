@@ -1,0 +1,24 @@
+An Errand	
+	As you leave class, Professor [professor: pName] calls out to you,
+ “Oh, before you leave [your name:: yName] can you send this message to 
+Professor Cliburn in Anderson 115?” You were planning on getting some 
+[food::fName] at the UC after your meeting, but the professor was rather
+ helpful to you, so you decide to oblige his request. As you head towards
+ Anderson, you notice a colleague walking towards you. “Oh, [yName]! I’m 
+glad I caught you. I was on my way over to CTC, but I forgot my ID… can 
+you let me in to CTC?” You look at your colleague’s [adjective] face and
+ have no choice but to aid him; you walk back to CTC and let your colleague
+ in. “Oh, thanks John, you’re a [noun]!”, your colleague says with a 
+comforted face. You start walking back to Anderson. You enter Anderson
+ and see many students working on the computers there, but you don’t see
+ Professor Cliburn. Another one of your colleagues recognizes you and calls
+ you over. “Hey John, do you know anything about [major related subject]?” 
+You do happen to know a little bit about [major related subject : mSubject];
+ but you must give Professor Cliburn that message, so you tell your colleague
+ your task. “Oh, he was just here a couple minutes ago, maybe you can help me
+ while you wait for him to come back” she says with [adjective] [animal] eyes.
+ You half-heartedly agree. After thirty minutes of helping your colleague learn
+ the basics of [mSubject]; Professor Cliburn returns. You quickly confront him 
+to deliver the message. “Oh thanks, [yName]. Hey, before you go can you…” You 
+cut him off “Sorry professor, there’s somewhere I need to be..” before anyone 
+can stop you, you rush off to the UC to get your [fName].

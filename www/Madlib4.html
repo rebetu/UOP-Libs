@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+
+
+  </head>
+  <body ng-app="starter" ng-controller="MyController">
+   <div ng-show="view == 'form'">
+    <ion-pane>
+	  <ion-content>
+	  <div class="bar bar-header bar-energized">
+			<h1 class="title">Insert words for each of the types of words </h1>
+	  </div>
+	  <br/> <br/>
+
+	 
+	 <!-- form view -->
+	  <div class="list" scroll="true">
+		<label class="item item-input">
+			<span class="input-label">Color</span>
+			<input type="text" ng-model="data.color1">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Color</span>
+			<input type="text" ng-model="data.color2">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective1">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective2">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Plural Animal</span>
+			<input type="text" ng-model="data.panimal1">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Plural Animal</span>
+			<input type="text" ng-model="data.panimal2">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Plural Animal</span>
+			<input type="text" ng-model="data.panimal3">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Dinosaur</span>
+			<input type="text" ng-model="data.dinosaur">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective3">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective4">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Noun</span>
+			<input type="text" ng-model="data.noun1">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective5">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective6">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective6">
+		</label>
+		</div>
+		<div class="bar bar-footer">
+            <button class="button-bar button button-energized" ng-click="submit()">Done</button>
+        </div>
+
+        </ion-content>
+    </ion-pane>
+   </div>
+
+    
+    <!-- story view -->
+    <div ng-show="view == 'story'">
+     <ion-pane>
+	  <ion-content>
+	  <div class="bar bar-header bar-energized">
+			<h1 class="title">Your Story</h1>
+	  </div>
+	  <br/> <br/> <br/>
+	  <p>
+	  Your computer science friend has allowed you the rare opportunity to experience a VR headset
+	for a research project he is working on. He instructs you to put on the headset and close your eyes.
+	You follow his instructions. A few moments later he gives you the okay to open your eyes.
+	When you open your eyes, you see a vast ocean in front of you. You look around and see that you are
+	on a sandy beach that seems to have no end. You look back at the ocean and see the sun setting in the
+	horizon, which fills the sky with shades of <span class="highlight">{{data.color1}}</span> and <span class="highlight">{{data.color2}}</span>. As you admire the view, the 
+	surroundings suddenly fade to white for a moment. You are transported to an entirely new location,
+	one with tall trees surrounding you. You are in some kind of <span class="highlight">{{data.adjective1}}</span> forest; with <span class="highlight">{{data.adjective2}}</span>
+	fauna and wildlife all around. You see <span class="highlight">{{data.panimal1}}</span> resting on the tree branches, <span class="highlight">{{data.panimal2}}</span>
+	swinging on vines, and colorful looking <span class="highlight">{{data.panimal3}}</span> hopping about. As you look around to explore
+	this forest further; you suddenly notice a giant <span class="highlight">{{data.dinosaur}}</span> looking at you. The <span class="highlight">{{data.dinosaur}}</span> lets
+	out a <span class="highlight">{{data.adjective3}}</span> cry and charges towards you. You immediately close your eyes. After a few moments,
+	you risk opening your eyes, only to find that you’re no longer in the jungle. At first, all you see is
+	black, so you move your head around, and notice a <span class="highlight">{{data.adjective4}}</span> white, rocky surface is beneath you. You
+	keep looking around, until you notice a large blue and white sphere like object in the sky. Wait a
+	second…you’re on the <span class="highlight">{{data.noun1}}</span>! As soon as you start to explore, you immediately notice the low gravity 
+	and perform some <span class="highlight">{{data.adjective5}}</span>! stunts that would have been impossible for you on Earth. Again, suddenly
+	and without warning, your surroundings fade to white, and your friend instructs you to remove the 
+	headset. That experience was unlike anything you’ve ever experience, it was truly <span class="highlight">{{data.adjective6}}</span>!.
+	  	</p>
+	    
+	 <div class="bar">
+        <div class="button-bar bar-footer">
+
+            <a id="save" class="button button-energized">Back to Main</a>
+        </div>
+    </div>
+   </ion-content>
+  </ion-pane> 
+</div>
+	<script>
+        document.getElementById("save").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+
+ <!--   <script>
+        document.getElementById("back").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+	<script>
+        document.getElementById("done").onclick = function () {
+            location.href = "Story1Output.html";
+        };
+    </script> -->
+	   <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/MyController.js"></script>
+	
+  </body>
+</html>

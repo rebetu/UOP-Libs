@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+
+
+  </head>
+  <body ng-app="starter" ng-controller="MyController">
+   <div ng-show="view == 'form'">
+    <ion-pane>
+	  <ion-content>
+	  <div class="bar bar-header bar-energized">
+			<h1 class="title">Insert words for each of the types of words </h1>
+	  </div>
+	  <br/> <br/>
+
+	 
+	 <!-- form view -->
+	  <div class="list" scroll="true">
+		<label class="item item-input">
+			<span class="input-label">Subject</span>
+			<input type="text" ng-model="data.subject">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective1">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective2">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Noun</span>
+			<input type="text" ng-model="data.noun1">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adverb</span>
+			<input type="text" ng-model="data.adverb1">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adverb</span>
+			<input type="text" ng-model="data.adverb2">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adverb</span>
+			<input type="text" ng-model="data.adverb3">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective3">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adverb</span>
+			<input type="text" ng-model="data.adverb4">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Adjective</span>
+			<input type="text" ng-model="data.adjective4">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Verb</span>
+			<input type="text" ng-model="data.verb">
+		</label>
+		<label class="item item-input">
+			<span class="input-label">Verb</span>
+			<input type="text" ng-model="data.verb">
+		</label>
+	</div>
+		<div class="bar bar-footer">
+            <button class="button-bar button button-energized" ng-click="submit()">Done</button>
+        </div>
+
+        </ion-content>
+    </ion-pane>
+   </div>
+
+    
+    <!-- story view -->
+    <div ng-show="view == 'story'">
+     <ion-pane>
+	  <ion-content>
+	  <div class="bar bar-header bar-energized">
+			<h1 class="title">Your Story</h1>
+	  </div>
+	  <br/> <br/> <br/>
+	  <p>
+	  
+	“Okay guys, today we’re going over <span class="highlight">{{data.subject}}</span>.
+	I trust you’ve all done the reading?” You look at your fellow students and try to gauge
+	if they had done the reading. You see mostly <span class="highlight">{{data.adjective1}}</span> faces.
+	Your professor gives a soft sigh. “Well, pay attention, because this stuff’s important.
+	You WILL see this on the final exam.” The <span class="highlight">{{data.adjective2}}</span> words.
+	In a ritualistic like move, everyone who didn’t have their notebook out, take them out.
+	You listen to the professor lecture on . You understand some of what he says, but the rest goes
+	completely over your head. You frantically try to take notes on everything that’s coming out of
+	his mouth, and hope it will make sense when you review it. “Alright, I want you guys to break in
+	to teams and work on this <span class="highlight">{{data.noun1}}</span>.”  You partner up with the 
+	two guys sitting on either side	of you. As a team, you briefly gloss over the 
+	<span class="highlight">{{data.adverb1}}</span>. The first few problems aren’t so bad,
+	your team manages to finish them <span class="highlight">{{data.adverb2}}</span> and with relative 
+	confidence that they are correct. The next few problems are a little
+	<span class="highlight">{{data.adverb3}}</span> though. He wants us to combine what we learned last
+	time with what we are currently learning. It takes some doing, but your team manages to complete
+	the problems, though you are not 100% that they are <span class="highlight">{{data.adjective3}}</span>. There are only a few more problems
+	to go. Your team stares <span class="highlight">{{data.adverb4}}</span> at the problems for a minute. Did the professor even go over this?
+	It doesn’t look <span class="highlight">{{data.adjective4}}</span>; your teammates are as clueless as you. You ask the team next to you if
+	they know what’s up, but they’re still on problem 3. You and your team eventually <span class="highlight">{{data.verb}}</span>, and ask
+	the professor for guidance. He attempts to explain it to you all, and though individually none of
+	you completely hits it, after more discussion with your teammates, you start to understand the
+	problem, and the whole process of <span class="highlight">{{data.subject}}</span>.
+	  	</p>
+	    
+	 <div class="bar">
+        <div class="button-bar bar-footer">
+
+            <a id="save" class="button button-energized">Back to Main</a>
+        </div>
+    </div>
+   </ion-content>
+  </ion-pane> 
+</div>
+	<script>
+        document.getElementById("save").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+
+ <!--   <script>
+        document.getElementById("back").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+	<script>
+        document.getElementById("done").onclick = function () {
+            location.href = "Story1Output.html";
+        };
+    </script> -->
+	   <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/MyController.js"></script>
+	
+  </body>
+</html>
